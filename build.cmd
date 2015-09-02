@@ -3,7 +3,7 @@
 @SET SRC=%~dp0\src
 @SET ARTIFACTS=%~dp0\artifacts
 @SET NUGET_COMMAND=%SRC%\.nuget\nuget.exe
-@SET PACKAGE_VERSION=%appveyor_build_version%
+@SET PACKAGE_VERSION=%APPVEYOR_BUILD_VERSION%
 
 IF "%PACKAGE_VERSION%"=="" (
 	SET PACKAGE_VERSION=0.0.1
