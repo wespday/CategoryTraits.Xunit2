@@ -29,7 +29,7 @@ You can roll your own:
 ```csharp
     public class MyVeryOwnTestAttribute : CategoryTraitAttribute
     { 
-        public NextMilestoneTestAttribute()
+        public MyVeryOwnTestAttribute()
             : base("MyVeryOwn")
         {
         }
