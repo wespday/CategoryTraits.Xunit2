@@ -3,7 +3,12 @@
 @SET SRC=%~dp0\src
 @SET ARTIFACTS=%~dp0\artifacts
 @SET NUGET_COMMAND=%SRC%\.nuget\nuget.exe
-@SET PACKAGE_VERSION=2.0.0
+@SET PACKAGE_VERSION=%appveyor_build_version%
+
+IF "%PACKAGE_VERSION%"=="" (
+	SET PACKAGE_VERSION=0.0.1
+)
+
 @SET NUGET_PACKAGE_ID=CategoryTraits.xUnit2
 @SET SOLUTION=%SRC%\CategoryTraits.xUnit2.sln
 @SET PROJECT_FOLDER=%SRC%\%NUGET_PACKAGE_ID%
