@@ -25,7 +25,7 @@ Previously in xUnit you could just easily subclass TraitAttribute but that class
 See: https://github.com/xunit/xunit/issues/394
 
 ## Where is my SlowTest, Milestone3Test, attribute etc...?
-You can roll your own:
+You can easily make your own custom attributes by adding a class inheriting from **CategoryTraitAttribute** in your project:
 ```csharp
     public class MyVeryOwnTestAttribute : CategoryTraitAttribute
     { 
