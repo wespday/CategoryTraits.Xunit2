@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CategoryTraits.Xunit2</id>
+    <version>$version$</version>
+    <authors>Wes Day</authors>
+    <owners>Wes Day</owners>
+    <licenseUrl>https://github.com/wespday/CategoryTraits.Xunit2/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/wespday/CategoryTraits.Xunit2</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Category Trait helper library for xUnit 2 tests (e.g. UnitTestAttribute)</description>
+    <copyright>Copyright 2015 Wes Day. All rights reserved.</copyright>
+    <tags>xUnit xUnit2</tags>
+    <dependencies>
+      <dependency id="xunit.core" version="[2,3)" />
+    </dependencies>
+    <references>
+      <reference file="CategoryTraits.Xunit2.dll" />
+    </references>		
+  </metadata>
+</package>
