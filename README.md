@@ -2,14 +2,9 @@
 
 UnitTest and IntegrationTest attributes etc... for xUnit 2
 
-## Installation
-* Get the source and build locally
-
-or
-
-* Install the [`CategoryTraits.Xunit2`](https://www.nuget.org/packages/CategoryTraits.Xunit2/) NuGet package using the Visual Studio NuGet Package Manager
-
 ## Usage
+Install the [`CategoryTraits.Xunit2`](https://www.nuget.org/packages/CategoryTraits.Xunit2/) NuGet package using the Visual Studio NuGet Package Manager
+
 ```csharp
     using CategoryTraits.Xunit2;
     ...
@@ -34,5 +29,9 @@ You can easily make your own custom attributes by adding a class inheriting from
         {
         }
     }
- ```  
+ ```
+ 
+## Building from Source?
+ Reqiures Visual Studio 2015.
+ Run the **build.cmd** batch file.
 
