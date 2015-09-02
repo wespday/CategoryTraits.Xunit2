@@ -15,7 +15,7 @@ Install the [`CategoryTraits.Xunit2`](https://www.nuget.org/packages/CategoryTra
 ## Why?
 This is an alternative to using the built in xUnit **[Trait ("Category", "Unit")]** attribute.
 Fewer chances for typos etc...
-Previously in xUnit you could just easily subclass TraitAttribute but that class is now sealed.
+Previously in xUnit you could just subclass TraitAttribute but that class is now sealed.
 
 See: https://github.com/xunit/xunit/issues/394
 
