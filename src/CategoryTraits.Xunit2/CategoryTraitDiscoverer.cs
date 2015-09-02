@@ -44,7 +44,7 @@ namespace CategoryTraits.Xunit2
         internal const string Namespace = nameof(CategoryTraits) + "." + nameof(Xunit2);
 
         /// <summary>
-        /// The namespace of this class
+        /// The fully qualified name of this class
         /// </summary>
         internal const string FullyQualifiedName = Namespace + "." + nameof(CategoryTraitDiscoverer);
 
