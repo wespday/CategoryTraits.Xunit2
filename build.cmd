@@ -1,4 +1,8 @@
+@ECHO OFF
 @SETLOCAL
+
+@ECHO.
+@ECHO  **** STARTING BUILD  ****
 
 @SET SRC=%~dp0\src
 @SET ARTIFACTS=%~dp0\artifacts
@@ -17,10 +21,19 @@ IF "%PACKAGE_VERSION%"=="" (
 @SET DOTNET_FRAMEWORK=portable-net45+win+wpa81+wp80
 @SET NUGET_PORTABLE_FRAMEWORK_FOLDER=%NUGET_PACKAGE_FOLDER%\lib\%DOTNET_FRAMEWORK%
 
-RMDIR /Q /S "%ARTIFACTS%"
+RMDIR /Q /S "%ARTIFACTS%" >nul 2>&1
 %NUGET_COMMAND% restore "%SOLUTION%"  -Verbosity quiet ||  GOTO BuildFailed
+
+@ECHO.
+@ECHO  **** BUIILD DEBUG  ****
 MSBuild "%SOLUTION%" %MSBUILDARGS% ||  GOTO BuildFailed
+
+@ECHO.
+@ECHO  **** BUIILD RELEASE  ****
 MSBuild "%SOLUTION%" %MSBUILDARGS% /property:Configuration=Release ||  GOTO BuildFailed
+
+@ECHO.
+@ECHO  **** CREATE NUGET PACKAGE  ****
 MKDIR "%NUGET_PORTABLE_FRAMEWORK_FOLDER%" ||  GOTO BuildFailed
 COPY "%PROJECT_FOLDER%\bin\Release\%NUGET_PACKAGE_ID%.??l" "%NUGET_PACKAGE_FOLDER%\lib\%DOTNET_FRAMEWORK%\" ||  GOTO BuildFailed
 COPY "%PROJECT_FOLDER%\bin\Release\%NUGET_PACKAGE_ID%.nuspec" "%NUGET_PACKAGE_FOLDER%\" ||  GOTO BuildFailed
