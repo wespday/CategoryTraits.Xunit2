@@ -18,7 +18,7 @@ or
         public void MyXunitTest(...)
 ```        
 ## Why?
-This is an alternative to using the built in xunit Trait [Trait ("Category", "Unit")] attribute.
+This is an alternative to using the built in xunit [Trait ("Category", "Unit")] attribute.
 Fewer chances for typos etc...
 Previously in xUnit you could just easily subclass TraitAttribute but that class is now sealed.
 
