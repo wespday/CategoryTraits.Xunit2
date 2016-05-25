@@ -1,6 +1,11 @@
-# CategoryTraits.Xunit2 [![Build status](https://ci.appveyor.com/api/projects/status/npw7t6hr74g0mur5/branch/master?svg=true)](https://ci.appveyor.com/project/wespday/categorytraits-xunit2/branch/master)
-
+# CategoryTraits.Xunit2 
 UnitTest and IntegrationTest attributes etc... for xUnit 2
+
+[![NuGet Badge](https://buildstats.info/nuget/CategoryTraits.Xunit2?includePreReleases=true)](https://www.nuget.org/packages/CategoryTraits.Xunit2/)
+
+[![Build status](https://ci.appveyor.com/api/projects/status/npw7t6hr74g0mur5/branch/master?svg=true)](https://ci.appveyor.com/project/wespday/categorytraits-xunit2/branch/master)
+
+[![Build history](https://buildstats.info/appveyor/chart/wespday/categorytraits-xunit2)](https://ci.appveyor.com/project/wespday/categorytraits-xunit2/history)
 
 ## Usage
 Install the [`CategoryTraits.Xunit2`](https://www.nuget.org/packages/CategoryTraits.Xunit2/) NuGet package using the Visual Studio NuGet Package Manager
